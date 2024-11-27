@@ -1,0 +1,30 @@
+.features__grid-item {
+  display: flex;
+  align-items: start;
+  justify-self: start;
+  text-align: right;
+  gap: 1.5rem;
+}
+.features__grid-item-text-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.features__grid-item-icon {
+  margin-top: 2rem;
+
+  i {
+    color: var(--primary-color);
+  }
+}
+
+@media (max-width: 992px) {
+  .features__grid-item {
+    text-align: center;
+    flex-direction: column-reverse;
+    max-width: 400px;
+  }
+  .features__grid-item-icon {
+    margin: 0 auto;
+  }
+}
